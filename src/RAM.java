@@ -22,4 +22,12 @@ public class RAM {
     public void setProducer(String producer) {
         this.producer = producer;
     }
+
+    @Override
+    public String toString() {
+        return "RAM{" +
+                "capacity=" + capacity +
+                ", producer='" + producer + '\'' +
+                '}';
+    }
 }

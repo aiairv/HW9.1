@@ -1,4 +1,3 @@
-import java.awt.event.KeyAdapter;
 
 public class Computer {
     private Display display;
@@ -7,9 +6,9 @@ public class Computer {
     private SSD ssd;
     private RAM ram;
     private USB usb;
-    private KeyAdapter keyboard;
+    private Keyboard keyboard;
 
-    public Computer(Display display, String brand, String colour, SSD ssd, RAM ram, USB usb, KeyAdapter keyboard) {
+    public Computer(Display display, String brand, String colour, SSD ssd, RAM ram, USB usb, Keyboard keyboard) {
         this.display = display;
         this.brand = brand;
         this.colour = colour;
@@ -18,7 +17,6 @@ public class Computer {
         this.usb = usb;
         this.keyboard = keyboard;
     }
-
 
     public Display getDisplay() {
         return display;
@@ -68,24 +66,23 @@ public class Computer {
         this.usb = usb;
     }
 
-    public KeyAdapter getKeyboard() {
+    public Keyboard getKeyboard() {
         return keyboard;
     }
 
-    public void setKeyboard(KeyAdapter keyboard) {
+    public void setKeyboard(Keyboard keyboard) {
         this.keyboard = keyboard;
     }
 
     @Override
     public String toString() {
-        return "Computer{" +
-                "display=" + display +
-                ", brand='" + brand + '\'' +
-                ", colour='" + colour + '\'' +
-                ", ssd=" + ssd +
-                ", ram=" + ram +
-                ", usb=" + usb +
-                ", keyboard=" + keyboard +
-                '}';
+        return "Computer" + "\n" +
+                display + "\n" +
+                "brand='" + brand + "\n" +
+                "colour='" + colour + "\n" +
+                ssd + "\n" +
+                ram + "\n" +
+                usb + "\n" +
+                keyboard;
     }
 }

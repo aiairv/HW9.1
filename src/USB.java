@@ -23,4 +23,11 @@ public class USB {
         this.portID = portID;
     }
 
+    @Override
+    public String toString() {
+        return "USB{" +
+                "usbType='" + usbType + '\'' +
+                ", portID=" + portID +
+                '}';
+    }
 }

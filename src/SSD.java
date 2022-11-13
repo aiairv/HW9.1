@@ -23,4 +23,12 @@ public class SSD{
         this.diskDivision = diskDivision;
     }
 
+    @Override
+    public String toString() {
+        return "SSD{" +
+                "memorySize=" + memorySize +
+                ", diskDivision=" + diskDivision +
+                '}';
+    }
 }
+
